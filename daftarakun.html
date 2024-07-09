@@ -4,67 +4,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="amik.png">
-  <title>Registrasi</title>
+  <title>Train Ticket Registration</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .gradient-custom-3 {
+      /* fallback for old browsers */
+      background: #0bce53;
+
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+
+    .gradient-custom-4 {
+      /* fallback for old browsers */
+      background: #0bce53;
+
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+  </style>
 </head>
 
-<body>
-  <center>
-    <table>
-      <td><img src="logo.png" width="180">&nbsp; &nbsp;
-        <font face="halaman" size="5">
-      <td>
-        <font size="6">
-          <center>REGISTRASI AKUN</center><b>E-TIKET KERETA API</b>
-        </font>
-      </td>
-    </table>
-  </center>
-  <tr height="20"></tr>
-  <table>
-    <tr>
-      <td>NAMA LENGKAP:</td>
-      <td><input type="text" size="20" maxleght="20" </td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td>NO. TELEFON:</td>
-      <td><input type="number" size="20" maxleght="20"></td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td>ALAMAT:</td>
-      <td><textarea rows="2" cols="20"></textarea></td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td>TANGGAL LAHIR:</td>
-      <td><input type="datetime-local"></td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td>ALAMAT EMAIL:</td>
-      <td><input type="text" size="20" maxleght="20" </td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td>USERNAME:</td>
-      <td><input type="text" size="20" maxleght="20" </td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td>PASSWORD:</td>
-      <td><input type="password" size="20" maxleght="20" </td>
-    </tr>
-    <tr height="5"></tr>
-    <tr>
-      <td><a href="ucapan.html">
-          <input type="button" name="button" value="DAFTAR"></a>&nbsp;
-        <a href="index.html"><input type="button" value="BATAL">
-        </a>
-      </td>
-    </tr>
-  </table>
+<body class="vh-100 bg-image" style="background-image: url('./img/bgkai.jpg');">
+
+  <section>
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                <form>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example4cg">Password</label>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label" for="form2Example3g">
+                      I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <a href="index.html" style="text-decoration: none; color: #333;"><button type="button"
+                        data-mdb-button-init data-mdb-ripple-init
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrasi</button></a>
+                  </div>
+
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="index.html"
+                      class="fw-bold text-body"><u>Login here</u></a></p>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
