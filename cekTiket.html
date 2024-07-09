@@ -6,39 +6,131 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cek Tiket</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <style>
+    hr {
+      height: 5px;
+      /* Mengatur ketebalan garis menjadi 3 piksel */
+      border-width: 0;
+      /* Menghilangkan border default */
+      background-color: #fff;
+      /* Mengatur warna garis menjadi hitam */
+    }
+  </style>
+
 </head>
 
-<body>
+<body style="
+background: linear-gradient(rgba(15, 23, 43, .8), rgba(15, 23, 43, .8)), url(./img/333.jpg);
+padding: 66px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-10">
+
+        <!-- <a href="jadwal.html">Click</a> -->
+
+        <center>
+          <table>
+            <td><img src="img/logo.png" width="200" style="margin-right: 20px;">
+            <td class="text-white">
+              <font size="6">TIKET KERETA ONLINE<br>
+                <center><b>PT KERETA API INDONESIA</b></center>
+              </font>
+            </td>
+          </table>
+        </center>
+        <hr>
+        <br>
+
+        <table class="table table-bordered table-dark table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th rowspan="2">Nomer</th>
+              <th rowspan="2">Nama</th>
+              <th rowspan=" 2">Tanggal</th>
+              <th rowspan="2">Hari</th>
+              <th colspan=" 2">Jam</th>
+              <th rowspan="2">Nama kereta api</th>
+              <th rowspan=" 2">Tujuan</th>
+            </tr>
+            <tr bgcolor="yellow">
+              <th>Keb</th>
+              <th>ST</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>09/09/2024</td>
+              <td>Rabu</td>
+              <td>12:00</td>
+              <td>01:20</td>
+              <td>Brantas</td>
+              <td>Indramayu</td>
+            </tr>
+
+            <tr>
+              <th scope="row">2</th>
+              <td>Udin</td>
+              <td>10/10/2024</td>
+              <td>Sabtu</td>
+              <td>00:00</td>
+              <td>09:35</td>
+              <td>Airlangga</td>
+              <td>Cirebon</td>
+            </tr>
+
+            <tr>
+              <th scope="row">3</th>
+              <td>Rina</td>
+              <td>12/04/2024</td>
+              <td>Senin</td>
+              <td>07:00</td>
+              <td>13:20</td>
+              <td>Gajah Duduk</td>
+              <td>Bekasi Timur</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>Doni</td>
+              <td>19/01/2024</td>
+              <td>Jumat</td>
+              <td>04:55</td>
+              <td>00:20</td>
+              <td>Kereta Terbang</td>
+              <td>Jakarta Pusat</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <a class="link-underline link-underline-opacity-0" href="daftar.html">
+      <div class="d-grid gap-2 col-6 mx-auto mt-5">
+        <button type="button" class="btn btn-outline-danger">Kembali</button>
+      </div>
+    </a>
+
+    <div style="margin-bottom: 100px;"></div>
+
+  </div>
 
 </body>
 
